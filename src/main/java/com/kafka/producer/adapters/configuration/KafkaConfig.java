@@ -39,7 +39,7 @@ public class KafkaConfig {
 
     @Bean
     public ProducerFactory<String, Object> producerFactory() {
-        return new DefaultKafkaProducerFactory(Map.of(
+        return new DefaultKafkaProducerFactory<>(Map.of(
                 KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class,
                 VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class,
                 BOOTSTRAP_SERVERS_CONFIG, kafkaServer,

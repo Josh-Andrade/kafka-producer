@@ -1,0 +1,9 @@
+{"namespace": "com.kafka.producer.usuario",
+ "type": "record",
+ "name": "Usuario",
+ "fields": [
+     {"name": "id", "type": "string"}
+     {"name": "nome", "type": "string"},
+     {"name": "idade", "type": "int"}
+ ]
+}
